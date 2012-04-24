@@ -5,7 +5,6 @@ class Timer extends EventEmitter{
     public $next = 0;
     public $callback = null;
     public function __construct($callback) {
-        $this->on('timeout', $callback);
     }
     public function set_timeout($seconds, $oneshot = false) {
         $this->interval = $interval;
